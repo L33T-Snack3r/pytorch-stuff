@@ -11,11 +11,13 @@ torch = {version = "^2.5.1+cu124", source = "pytorch-gpu"}
 torchvision = {version = "^0.20.1+cu124", source = "pytorch-gpu"}
 torchaudio = {version = "^2.5.1+cu124", source = "pytorch-gpu"}
 matplotlib = "^3.10.0"
+scikit-learn = "^1.6.0"
 
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
 ipykernel = "^6.29.5"
+requests = "^2.32.3"
 
 
 [[tool.poetry.source]]
