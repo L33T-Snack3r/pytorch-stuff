@@ -7,10 +7,26 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+torch = {version = "^2.5.1+cu124", source = "pytorch-gpu"}
+torchvision = {version = "^0.20.1+cu124", source = "pytorch-gpu"}
+torchaudio = {version = "^2.5.1+cu124", source = "pytorch-gpu"}
+matplotlib = "^3.10.0"
 
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
+ipykernel = "^6.29.5"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu124"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]
