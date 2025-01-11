@@ -12,6 +12,7 @@ torchvision = {version = "^0.20.1+cu124", source = "pytorch-gpu"}
 torchaudio = {version = "^2.5.1+cu124", source = "pytorch-gpu"}
 matplotlib = "^3.10.0"
 scikit-learn = "^1.6.0"
+torchinfo = "^1.8.0"
 
 
 [tool.poetry.group.dev.dependencies]
